@@ -2,7 +2,7 @@
 // @name         Pirated games on store pages
 // @namespace    CrazyMan390PirateStore
 // @author       0verchargedBattery#9946
-// @version      1.0.0
+// @version      1.1.0
 // @description  Adds links to pirated games on multiple stores
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // @match        https://www.gog.com/game/*
