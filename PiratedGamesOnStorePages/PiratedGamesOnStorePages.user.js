@@ -143,7 +143,6 @@ switch (storePageResult) {
         appName = realNameXbox;
         var checkExistXbox = setInterval(function() {
             if ($('.typography-module__xdsButtonText___10s5S').length) {
-                console.log(document.getElementsByClassName("typography-module__xdsButtonText___10s5S"))
                 if ($('.typography-module__xdsButtonText___10s5S')[0].innerText == "BUY") {
                     console.log("Buy Exists!");
                     pirateLinks.forEach((e) => {
