@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EdgenTweaks
 // @namespace    https://github.com/CrazyMan390/Userscripts
-// @version      1.5.6
+// @version      3.0.0
 // @description  Adds tweaks to edgenuity
 // @updateURL  https://github.com/CrazyMan390/Userscripts/raw/master/EdgenTweaks%202024/EdgenTweaks.js
 // @downloadURL  https://github.com/CrazyMan390/Userscripts/raw/master/EdgenTweaks%202024/EdgenTweaks.js
