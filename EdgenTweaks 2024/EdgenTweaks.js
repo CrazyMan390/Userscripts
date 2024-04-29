@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EdgenTweaks
 // @namespace    https://github.com/CrazyMan390/Userscripts
-// @version      3.0.0
+// @version      1.5.6
 // @description  Adds tweaks to edgenuity
 // @updateURL  https://github.com/CrazyMan390/Userscripts/raw/master/EdgenTweaks%202024/EdgenTweaks.js
 // @downloadURL  https://github.com/CrazyMan390/Userscripts/raw/master/EdgenTweaks%202024/EdgenTweaks.js
@@ -17,9 +17,22 @@ setTimeout( //2 sec delay to load before trying to run
 // Auto Advance
 function autoadvance() {
             if (document.getElementById("activity-title").innerText == "Quiz") {
+                if (document.getElementsByClassName("timeRemaining")[0]) {
+                    var time = document.getElementsByClassName("timeRemaining")[0].innerhtml
+                    var timeLeft = time.split(':')
+                    if (+timeLeft[0] >= 50) {
+                                       try {document.getElementsByClassName("footnav goRight")[0].mouseover()} catch (TypeError) {}
+               try {document.getElementsByClassName("uibtn uibtn-blue uibtn-med uibtn-alt")[0].mousedown()} catch (TypeError) {}
+               try {document.getElementsByClassName("uibtn uibtn-blue uibtn-med uibtn-alt")[0].click()} catch (TypeError) {}
+               try {document.getElementsByClassName("uibtn uibtn-blue uibtn-med uibtn-alt")[0].mouseup()} catch (TypeError) {}
+                    }
+                }
             } else {
-                try {document.getElementsByClassName("footnav goRight")[0].click()} catch (TypeError) {}
-                try {window.frames[0].API.FrameChain.nextFrame()} catch (TypeError) {}
+               try {document.getElementsByClassName("footnav goRight")[0].mouseover()} catch (TypeError) {}
+               try {document.getElementsByClassName("footnav goRight")[0].mousedown()} catch (TypeError) {}
+               try {document.getElementsByClassName("footnav goRight")[0].click()} catch (TypeError) {}
+               try {document.getElementsByClassName("footnav goRight")[0].mouseup()} catch (TypeError) {}
+               try {window.frames[0].API.FrameChain.nextFrame()} catch (TypeError) {}
             }
 }
 // Skip intro
@@ -70,4 +83,4 @@ function loop() {
     showColumn()
 }
 window.masterloop = setInterval(loop, 2000);
-}, 2000);
+}, 6000);
